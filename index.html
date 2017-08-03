@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Homes Reinvented</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {height: 100%}
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Fira Sans';
+	letter-spacing: 5px;
+	font-weight: 100;}
+body, p {
+	font-family: "Fira Sans", Verdana, sans-serif;
+	font-weight: 100;
+}
+.projects {display: none;}
+
+/* Create a Parallax Effect */
+.bgimg {
+	background-image: url("Photos/CoverImage-BWKitchen.jpg");
+	background-attachment: fixed;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100%;
+}
+
+a {	font-size:small;}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg {
+        background-attachment: scroll;
+    }
+}
+</style>
+</head>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge  w3-indigo w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">HOME</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hover-black">PROJECTS</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hover-black">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-black">CONTACT</a>
+    <a class="w3-right w3-animate-right w3-bar-item">HOMES REINVENTED</a>
+  </div>
+</div>
+
+<!-- Header with image         w3-grayscale-min       -->
+<header class="bgimg w3-display-container" id="home">
+
+  <div class="w3-display-middle w3-center w3-white">
+<!-- Header for desktop
+    <img src="Photos/HomesReinvented-logo-alt2.png" width=100%>
+    <h4 style="font-weight:200" class="w3-hide-small">Don't Bungle the Bungalo</h4> -->
+<!-- Header for phone -->
+    <img src="Photos/HomesReinvented-logo-alt2.png" width="100%">
+	<h5 style="font-weight:300; letter-spacing:normal;" class="w3-hide-medium w3-hide-large"><i class="fa fa-wrench"></i><br /> Website Under Construction</h5>
+   <h4 style="font-weight:300" class="w3-hide-small" style="letter-spacing:normal"><i class="fa fa-wrench"></i> <br />Website Under Construction</h4>
+  </div>
+</header>
+
+<!-- Projects -->
+<div class="w3-container w3-black w3-padding-64 w3-large" id="projects">
+	<div class="w3-content" style="max-width:1100px;margin-top:60px;margin-bottom:80px">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Projects</h1>
+
+     <!-- Slideshow -->
+  <div class="w3-container">
+    <div>
+   	    <p>Below are some before and after photos of the Parkwood Traditional. </p>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_CoverImage.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Parkwood Traditional Before and After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Living_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Livingroom Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Living_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Livingroom After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Dining_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Dinning Room Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Dining_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Dinning Room After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchBack_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Backyard Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchBack_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Backyard After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchFront_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Front Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchFront_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Front after</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_MasterBath_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Master Bathroom Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_MasterBath_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Master Bathroom After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Basement_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Basement Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Basement_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Basement After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Bath_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Bathroom Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Bath_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Bathroom After</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding-8 w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-angle-left"></i>
+      </div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-angle-right w3-hover-text-teal"></i>
+      </div>
+	<div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(11)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(12)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(13)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(14)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(15)"></span>
+	</div> <!-- end of demodots next/previous buttons -->
+    </div> <!-- end of grey container below Slideshow/Carousel -->
+    </div> <!-- end of Slideshow -->
+    </div> <!-- end of containers content -->
+</div> <!-- end of Slideshow container -->
+
+<!-- About -->
+<div class="w3-container w3-dark-gray w3-padding-64 w3-large" id="about">
+    <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:32px">About</h1>
+        <p>At Homes Reinvented, we enjoy designing and working with clients whether it’s a large apartment building or a small closet. Helping clients find their style and pulling together a cohesive space is very rewarding. Our goal is to leave you with a home that is comfortable, inviting and in your own style. We help you with Professional finish selections for your home or investment property. It is our sincere goal to maximize your investment potential, complete the project on time, and finish on budget! In addition, we enjoy providing the eventual new home owner with a fresh new “Reinvented Home” they will be proud of for years to come.</p>
+    <div class="w3-col m6 w3-center w3-padding-large">
+        <img src="Photos/Beverly_portrait.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="235" height="235">
+        <h4 style="letter-spacing:normal; font-weight:300">Beverly Belanger Marquart</h4>
+        <p>Senior Designer and CEO <br />Graduated College of Architecture<br />University of Oklahoma 1995</p><br>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-small">
+    	<h3 style="letter-spacing:normal">The Homes Reinvented Process</h3>
+      <ul>
+      	<li>We will walk through your home or investment property for an initial brain-storming session to discuss possible room arrangement and wall removals</li>
+      	<li>We come up with a plan for your timeline and budget</li>
+      	<li>We will provide ideas and basic plans with all finish selections. Client will receive 1-2 complete suggestions of finishes to choose from</li>
+        <li>We make every attempt to find the least expensive, yet most appealing and up to date finishes</li>
+        <li>Extensive research has and will go into all selections</li>
+      	<li>We shop for the client or with the client</li>
+      	<li>We schedule all trades and see work to completion</li>
+      </ul>
+      <p>We can use your trade contacts or ours. Either way, we leave you in a beautifully designed cohesive home. </p>
+    </div>
+    </div>
+</div>    <!-- end of About container -->
+
+<!-- Contact -->
+<div class="w3-container w3-grey w3-padding-64 w3-large" id="contact">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px; margin-top:62px;">Contact</h1>
+    <h3 style="letter-spacing:normal">Serving the Dallas/Fort Worth area.</h3>
+    <p style="font-weight:300;">Tell us about your dream home. We can walk you through the design process and introduce you to some inspiring ideas. Don't you think it's time you introduce your home to the twenty-first century?</p>
+    <p style="font-weight:300;"><span class="w3-sign">FYI!</span> Talking is free! Call for a consultation today. What the heck, it's free!</p>
+    <p style="font-weight:300;">Available Monday - Friday: 8am - 5pm <br />
+        Send us a message or call:</p>
+    <!--<p><strong>bbm@homesreinvented.com <br />817-999-0893</strong></p>-->
+    <img src="Photos/phoneANDemail.png" /> <!-- this is an image of email and ph number -->
+
+<!-- This form for sending email is not working   -->
+    <!--    <form action="/action_page.php" target="_blank" method="post">
+      <p style="font-weight:300;"><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Currently under construction - Your Name" required name="Name"></p>
+      <p style="font-weight:300;"><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Currently under construction - Your Email address" required name="email"></p>
+      <p style="font-weight:300;"><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Currently under construction - Subject" required name="subject"></p>
+      <label style="font-weight:300" for="Message">Short Message (up to 140 characters)</label>
+      <p><textarea style="font-weight:300;" class="w3-input w3-padding-16 w3-border" type="text" placeholder="Currently under construction - Tell me about your dream home." required name="Message"></textarea></p>
+      <p style="font-weight:300;"><button class="w3-button w3-indigo w3-block w3-hover-blue" type="submit">Currently under construction - SEND MESSAGE</button></p>
+    </form> -->
+  </div>
+</div>
+
+<!-- footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-hover-black">
+  <p style="font-size:small" >Special thanks to  <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> for this template.</p>
+</footer>
+
+<!-- javascript -->
+ <script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+</body>
+</html>
