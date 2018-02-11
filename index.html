@@ -17,7 +17,35 @@ body, p {
 	font-family: "Fira Sans", Verdana, sans-serif;
 	font-weight: 100;
 }
-.projects {display: none;}
+#projects {
+    background-color:#2c3e50;
+}
+#about {
+    background-color:#502c3e;
+    color:white;    
+}
+#myNavbar {
+    background-color:#2c2c50;
+    color:white;
+}
+#contact {
+    background-color:#2c5050;
+    color:white;    
+}
+.st-content {
+	max-width: 800px;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.st-caption {
+     font-weight:300;
+     font-family:'Fira Sans';
+     font-size: 15px;
+     color:#ffffff ;/*#000000;*/
+}
 
 /* Create a Parallax Effect */
 .bgimg {
@@ -46,7 +74,7 @@ a {	font-size:small;}
 <body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-hide-small">
-  <div class="w3-bar w3-xlarge  w3-indigo w3-hover-opacity-off" id="myNavbar">
+  <div class="w3-bar w3-xlarge w3-hover-opacity-off" id="myNavbar">
     <a href="#" class="w3-bar-item w3-button w3-hover-black">HOME</a>
     <a href="#projects" class="w3-bar-item w3-button w3-hover-black">PROJECTS</a>
     <a href="#about" class="w3-bar-item w3-button w3-hover-black">ABOUT</a>
@@ -63,110 +91,131 @@ a {	font-size:small;}
     <img src="Photos/HomesReinvented-logo-alt2.png" width=100%>
     <h4 style="font-weight:200" class="w3-hide-small">Don't Bungle the Bungalo</h4> -->
 <!-- Header for phone -->
-    <img src="Photos/HomesReinvented-logo-alt2.png" width="100%">
+    <img src="Photos/HomesReinvented-logo-alt2.png" style="width:100%">
 	<h5 style="font-weight:300; letter-spacing:normal;" class="w3-hide-medium w3-hide-large"><i class="fa fa-wrench"></i><br /> Website Under Construction</h5>
-   <h4 style="font-weight:300" class="w3-hide-small" style="letter-spacing:normal"><i class="fa fa-wrench"></i> <br />Website Under Construction</h4>
+   <h4 style="font-weight:300; letter-spacing:normal" class="w3-hide-small"><i class="fa fa-wrench"></i> <br />Website Under Construction</h4>
   </div>
 </header>
 
 <!-- Projects -->
-<div class="w3-container w3-black w3-padding-64 w3-large" id="projects">
-	<div class="w3-content" style="max-width:1100px;margin-top:60px;margin-bottom:80px">
-    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Projects</h1>
+<div class="w3-container" id="projects">
+<div class="w3-content" style="max-width:1100px;margin-bottom:280px">
 
-     <!-- Slideshow -->
-  <div class="w3-container">
+<div class="w3-container st-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px; color:white;">Projects</h1>
+    
+<!-- Trigger for the Modal using Responsiveness Layout -->
+    <div class="w3-row">
+        <div class="w3-half w3-container">
+            <img src="Photos/c_Living_a.jpg" class="w3-image w3-hover-opacity" alt="Photo" onclick="document.getElementById('id01').style.display='block'"> 
+            <div class="w3-block w3-center w3-padding-large" style="color:white">Parkwood Traditional</div>
+        </div>
+        
+        <div class="w3-half w3-container">
+            <img src="Photos/c_Living_a.jpg" class="w3-image w3-hover-opacity" alt="Photo" onclick="document.getElementById('id02').style.display='block'"> 
+            <div class="w3-block w3-center w3-padding-large" style="color:white">Second home</div>
+        </div>    
+    </div> <!-- end of Trigger for Modal using Responsive Layout -->
+    
+
+  <!-- The Modal for Parkwood Traditional (id01)-->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card w3-animate-opacity w3-black w3-padding-32">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+             <!-- Slideshow -->
+  <div class="w3-container w3-padding-large w3-black">
     <div>
    	    <p>Below are some before and after photos of the Parkwood Traditional. </p>
     </div>
     <div class="w3-display-container mySlides">
-      <img src="Photos/c_CoverImage.jpg" style="width:100%">
+        <img src="Photos/c_CoverImage.jpg" alt="Parkwood Traditional Home" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Parkwood Traditional Before and After</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Parkwood Traditional Before and After</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Living_b.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Livingroom Before</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Livingroom Before</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Living_a.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Livingroom After</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Livingroom After</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Dining_b.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Dinning Room Before</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Dinning Room Before</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Dining_a.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Dinning Room After</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Dinning Room After</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_KitchBack_b.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Backyard Before</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Backyard Before</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_KitchBack_a.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Backyard After</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Backyard After</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_KitchFront_b.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Front Before</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Front Before</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_KitchFront_a.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Kitchen Facing Front after</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Front after</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_MasterBath_b.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Master Bathroom Before</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Master Bathroom Before</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_MasterBath_a.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Master Bathroom After</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Master Bathroom After</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Basement_b.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Basement Before</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Basement Before</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Basement_a.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Basement After</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Basement After</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Bath_b.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Bathroom Before</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Bathroom Before</span>
       </div>
     </div>
     <div class="w3-display-container mySlides">
       <img src="Photos/c_Bath_a.jpg" style="width:100%">
       <div class="w3-display-topright w3-container w3-padding-32">
-        <span style="font-weight:300;" class="w3-white w3-padding-large w3-animate-bottom">Bathroom After</span>
+        <span class="st-caption w3-padding-small w3-animate-bottom">Bathroom After</span>
       </div>
     </div>
 
@@ -196,15 +245,153 @@ a {	font-size:small;}
     </div> <!-- end of grey container below Slideshow/Carousel -->
     </div> <!-- end of Slideshow -->
     </div> <!-- end of containers content -->
-</div> <!-- end of Slideshow container -->
+      </div>
+    </div> <!-- end of Model for Parkwood Traditional -->
+  
+  <!-- The Modal #2 for new Home (id02)-->
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-card w3-animate-opacity w3-black w3-padding-32">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+             <!-- Slideshow -->
+  <div class="w3-container w3-padding-large w3-black">
+    <div>
+        <p>Below are some before and after photos of the Parkwood Traditional. </p>
+    </div>
+    <div class="w3-display-container mySlides">
+        <img src="Photos/c_CoverImage.jpg" alt="Parkwood Traditional Home" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Parkwood Traditional Before and After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Living_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Livingroom Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Living_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Livingroom After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Dining_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Dinning Room Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Dining_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Dinning Room After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchBack_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Backyard Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchBack_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Backyard After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchFront_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Front Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_KitchFront_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Kitchen Facing Front after</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_MasterBath_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Master Bathroom Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_MasterBath_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Master Bathroom After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Basement_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Basement Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Basement_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Basement After</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Bath_b.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Bathroom Before</span>
+      </div>
+    </div>
+    <div class="w3-display-container mySlides">
+      <img src="Photos/c_Bath_a.jpg" style="width:100%">
+      <div class="w3-display-topright w3-container w3-padding-32">
+        <span class="st-caption w3-padding-small w3-animate-bottom">Bathroom After</span>
+      </div>
+    </div>
+
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-container w3-dark-grey w3-padding-8 w3-xlarge">
+      <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-angle-left"></i>
+      </div>
+      <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-angle-right w3-hover-text-teal"></i>
+      </div>
+	<div class="w3-center">
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(11)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(12)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(13)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(14)"></span>
+        <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(15)"></span>
+	</div> <!-- end of demodots next/previous buttons -->
+    </div> <!-- end of grey container below Slideshow/Carousel -->
+    </div> <!-- end of Slideshow -->
+    </div> <!-- end of containers content -->
+      </div>
+    </div> <!-- end of Model #2 for new Home -->
+  
+  
+</div>
+   
+
+</div>
+</div> <!-- end of Projects container -->
 
 <!-- About -->
-<div class="w3-container w3-dark-gray w3-padding-64 w3-large" id="about">
-    <div class="w3-content">
+<div class="w3-container w3-padding-64 w3-large" id="about">
+    <div class="w3-content st-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:32px">About</h1>
         <p>At Homes Reinvented, we enjoy designing and working with clients whether it’s a large apartment building or a small closet. Helping clients find their style and pulling together a cohesive space is very rewarding. Our goal is to leave you with a home that is comfortable, inviting and in your own style. We help you with Professional finish selections for your home or investment property. It is our sincere goal to maximize your investment potential, complete the project on time, and finish on budget! In addition, we enjoy providing the eventual new home owner with a fresh new “Reinvented Home” they will be proud of for years to come.</p>
     <div class="w3-col m6 w3-center w3-padding-large">
-        <img src="Photos/Beverly_portrait.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Me" width="235" height="235">
+        <img src="Photos/Beverly_portrait.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Beverly" width="235" height="235">
         <h4 style="letter-spacing:normal; font-weight:300">Beverly Belanger Marquart</h4>
         <p>Senior Designer and CEO <br />Graduated College of Architecture<br />University of Oklahoma 1995</p><br>
     </div>
@@ -227,16 +414,16 @@ a {	font-size:small;}
 </div>    <!-- end of About container -->
 
 <!-- Contact -->
-<div class="w3-container w3-grey w3-padding-64 w3-large" id="contact">
-  <div class="w3-content">
+<div class="w3-container w3-padding-64 w3-large" id="contact">
+  <div class="w3-content st-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px; margin-top:62px;">Contact</h1>
     <h3 style="letter-spacing:normal">Serving the Dallas/Fort Worth area.</h3>
     <p style="font-weight:300;">Tell us about your dream home. We can walk you through the design process and introduce you to some inspiring ideas. Don't you think it's time you introduce your home to the twenty-first century?</p>
     <p style="font-weight:300;"><span class="w3-sign">FYI!</span> Talking is free! Call for a consultation today. What the heck, it's free!</p>
-    <p style="font-weight:300;">Available Monday - Friday: 8am - 5pm <br />
+    <p style="font-weight:300;">Available Monday - Friday: 8am - 5pm or by appointment<br />
         Send us a message or call:</p>
-    <!--<p><strong>bbm@homesreinvented.com <br />817-999-0893</strong></p>-->
-    <img src="Photos/phoneANDemail.png" /> <!-- this is an image of email and ph number -->
+    <p>bbm(at)homesreinvented(dot)com <br />817.999.0893</p>
+    
 
 <!-- This form for sending email is not working   -->
     <!--    <form action="/action_page.php" target="_blank" method="post">
@@ -251,8 +438,8 @@ a {	font-size:small;}
 </div>
 
 <!-- footer -->
-<footer class="w3-center w3-black w3-padding-48 w3-hover-black">
-  <p style="font-size:small" >Special thanks to  <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> for this template.</p>
+<footer class="w3-center w3-black w3-padding-large w3-hover-black">
+  <p style="font-size:small" >Special thanks to  <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3schools</a> for this template.</p>
 </footer>
 
 <!-- javascript -->
