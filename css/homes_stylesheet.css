@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*  Color pallet for this website: http://www.color-hex.com/color/2c3e50  */
+
+body, html {height: 100%} /* This must be set for parallax effect */
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Fira Sans';
+	letter-spacing: 5px;
+	font-weight: 100;
+}
+h3 {
+    letter-spacing:normal;
+    color:white;
+}
+body, p {
+	font-family: "Fira Sans", Verdana, sans-serif;
+	font-weight: 100;
+}
+.projects {
+    background-color:#2c3e50;
+}
+.hr-project {
+    background-color:#2c3e50;
+    color:white;        
+}
+#about {
+    background-color:#502c3e;
+    color:white;    
+}
+.hr-about {
+    background-color:#502c3e;
+    color:white;        
+}
+#myNavbar {
+    background-color:#2c2c50;
+    color:white;
+}
+.hr-navbar {
+    background-color:#2c2c50;
+    color:white;    
+}
+#contact {
+    background-color:#2c5050;
+    color:white;    
+}
+.hr-contact {
+    background-color:#2c5050;
+    color:white;    
+}
+.st-content {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.vertical-content {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;    
+}
+.st-caption {
+     font-weight:300;
+     font-family:'Fira Sans';
+     font-size: 15px;
+     color:#ffffff;
+}
+
+
+
+a {	font-size:small;}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: #502c3e;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+/* used to display text on top of image */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
