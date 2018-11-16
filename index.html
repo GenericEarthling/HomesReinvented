@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-flat.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 /*  Color pallet for this website: http://www.color-hex.com/color/2c3e50  */
@@ -32,31 +33,54 @@
 <body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top w3-hide-small">
-  <div class="w3-bar w3-xlarge " id="myNavbar">
+  <div class="w3-bar w3-xlarge w3-hover-opacity-off w3-flat-wet-asphalt" id="myNavbar">  
     <a href="#" class="w3-bar-item w3-button w3-hover-black">HOME</a>
-    <a href="#projects" class="w3-bar-item w3-button st-nav-hover">PROJECTS</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hover-black">PROJECTS</a>
     <a href="#about" class="w3-bar-item w3-button w3-hover-black">ABOUT</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hover-black">CONTACT</a>
     <a class="w3-right w3-animate-right w3-bar-item">HOMES REINVENTED</a>
   </div>
 </div>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-large">
+  <div class="w3-bar w3-xlarge w3-hover-opacity-off w3-flat-wet-asphalt" id="myNavbar">  
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">HOME</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hover-black">PROJECTS</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hover-black">ABOUT</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hover-black">CONTACT</a>
+  </div>
+</div>
 
-<!-- Header with image         w3-grayscale-min       -->
+<!-- Center logo / landing frame  -->
 <header class="bgimg w3-display-container" id="home">
 
   <div class="w3-display-middle w3-center w3-white">
-<!-- Header for desktop
-    <img src="Photos/HomesReinvented-logo-alt2.png" width=100%>
-    <h4 style="font-weight:200" class="w3-hide-small">Don't Bungle the Bungalo</h4> -->
-<!-- Header for phone -->
     <img src="Photos/HomesReinvented-logo-alt2.png" style="width:100%">
-	<h5 style="font-weight:300; letter-spacing:normal;" class="w3-hide-medium w3-hide-large"><i class="fa fa-wrench"></i><br /> Website Under Construction</h5>
-   <h4 style="font-weight:300; letter-spacing:normal" class="w3-hide-small"><i class="fa fa-wrench"></i> <br />Website Under Construction</h4>
+    <!-- Center logo / Small Screen  -->
+    <div class="w3-hide-medium w3-hide-large"> 
+        <p class="st-caption" style="color: black;">
+            <b>Beverly Belanger Marquart</b><br />
+            <em>Interior Design & <br />Re-construction Services<br />
+            817-999-0893</em></p>
+        <p>
+        [ <i class="fa fa-wrench"></i> <em>Website Under Construction</em> ]</p>
+    </div>
+    
+    <!-- Center logo / Large Screen  -->
+    <div class="w3-hide-small">
+        <p class="st-caption" style="color: black;">
+            <b>Beverly Belanger Marquart</b><br />
+            <em>Interior Design & Re-construction Services<br />
+            817-999-0893</em></p>        
+        <p>
+        [ <i class="fa fa-wrench"></i> <em>Website Under Construction</em> ]</p>  
+    </div>
+
   </div>
 </header>
 
 <!-- Projects -->
-<div class="w3-container w3-padding-32 w3-large" id="projects">
+<div class="w3-container w3-padding-32 w3-large w3-flat-midnight-blue" id="projects">
 <div class="w3-content" style="max-width:1100px; margin-bottom:100px">
 <div class="w3-container st-content">
     <h1 class="w3-center w3-jumbo" style="color:white;">Projects</h1>
@@ -96,14 +120,25 @@
 <div class="w3-content st-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:32px">About</h1>
         <p>At Homes Reinvented, we enjoy designing and working with clients on projects that are both large and small. Helping clients find their style and pulling together a cohesive space is our goal.  We work with you to create a home that is comfortable, inviting and in your own style.  With home owners as well as investors it is our sincere goal to maximize your investment potential, complete the project on time, and finish on budget!</p>
-    <div class="w3-col m6 w3-center w3-padding-large">
+    <h3 style="color: black; font-weight: 300;">The Homes Reinvented Process</h3>
+      <ul>
+      	<li>First meeting we walk through your home or investment property with you for an initial brain-storming session to discuss possible room arrangement and or change floor plans. Discover your style and figure out your goals for the space. Together we come up with a plan to meet your timeline and budget.</li>
+      	<li>Second meeting we will provide ideas, basic plans (if required) and finish selections. Clients will receive 2 or more complete suggestions.</li>
+      	<li>Once you decide on a direction. We can use your trade contacts or ours. Either way, we work for and with you to create a beautifully designed cohesive home.</li>
+      </ul>
+      <p>Our number one goal at Homes Reinvented is a fresh new “Reinvented Home” you will be proud of for years to come. </p>
+      <p class="st-caption" style="color: black;"><b>Beverly Belanger Marquart</b><br />
+      <em>Senior Designer and CEO <br />Graduated College of Architecture<br />University of Oklahoma 1995</em></p>
+        
+        <!-- THIS ABOUT SECTION IS SAVED HERE WAITING FOR NEW HEAD SHOT -->
+    <!--<div class="w3-col m6 w3-center w3-padding-large">
         <img src="Photos/Beverly_portrait.jpg" class="w3-round w3-image w3-hover-opacity-off" alt="Photo of Beverly" width="235" height="235">
         <h4 style="letter-spacing:normal; font-weight:300">Beverly Belanger Marquart</h4>
         <p>Senior Designer and CEO <br />Graduated College of Architecture<br />University of Oklahoma 1995</p><br>
-    </div>
+    </div>-->
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-small">
+    <!--<div class="w3-col m6 w3-hide-small w3-padding-small">
     	<h3>The Homes Reinvented Process</h3>
       <ul>
       	<li>First meeting we walk through your home or investment property with you for an initial brain-storming session to discuss possible room arrangement and or change floor plans. Discover your style and figure out your goals for the space. Together we come up with a plan to meet your timeline and budget.</li>
@@ -111,17 +146,17 @@
       	<li>Once you decide on a direction. We can use your trade contacts or ours. Either way, we work for and with you to create a beautifully designed cohesive home.</li>
       </ul>
       <p>Our number one goal at Homes Reinvented is a fresh new “Reinvented Home” you will be proud of for years to come. </p>
-    </div>
+      
+    </div>-->
 </div>
 </div>    <!-- end of About container -->
 
 <!-- Contact -->
-<div class="w3-container w3-padding-32 w3-large" id="contact">
+<div class="w3-container w3-padding-32 w3-large w3-flat-midnight-blue" id="contact">
   <div class="w3-content st-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px; margin-top:62px;">Contact</h1>
     <h3 style="letter-spacing:normal">Serving the Dallas/Fort Worth area.</h3>
-    <p style="font-weight:300;">Tell us about your dream home. We can walk you through the design process and introduce you to some inspiring ideas. Don't you think it's time you introduce your home to the twenty-first century?</p>
-    <p style="font-weight:300;"><span class="w3-sign">FYI!</span> Talking is free! Call for a consultation today. What the heck, it's free!</p>
+    <p style="font-weight:300;">Tell us about your dream home. We can walk you through the design process and introduce you to some inspiring ideas.</p>
     <p style="font-weight:300;">Available Monday - Friday: 8am - 5pm or by appointment<br />
         Send us a message or call:</p>
     <p>bbm(at)homesreinvented(dot)com <br />817.999.0893</p>
